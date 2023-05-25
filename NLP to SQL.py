@@ -57,7 +57,7 @@ def send_to_openai(prompt):
     return response
 
 
-openai.api_key = "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"
+openai.api_key = "Enter Your Secret Key"
 
 if __name__ == "__main__":
     x, y = insert_table_schema()
