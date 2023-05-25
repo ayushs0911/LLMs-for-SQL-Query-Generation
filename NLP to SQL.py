@@ -60,8 +60,8 @@ def send_to_openai(prompt):
 openai.api_key = "Enter Your Secret Key"
 
 if __name__ == "__main__":
-    x, y = insert_table_schema()
-    z = create_table_definition_prompt(df=y, table_name=x)
+    table, column_name = insert_table_schema()
+    z = create_table_definition_prompt(df=column_name, table_name=table)
     input = user_query_input()
     combined = combine_prompts(fixed_sql_prompt = z, user_query=input)
     # print(combined)
